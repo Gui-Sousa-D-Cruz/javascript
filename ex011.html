@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analíse de Origem</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        
+        input#txti{
+            background-color: rgb(54, 134, 134);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+            font-weight: bolder;
+            height: 30px;
+            font-size: 1em;
+
+        }
+
+        input#botao{
+            color: white;
+            background-color: rgb(54, 134, 134);
+            border-radius: 100px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+            font-weight: bolder;
+            width: 70px;
+            height: 70px;
+            border: 0px;
+
+        }
+
+        input#botao:hover{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Analisando Origem</h1>
+    <h2>Qual seu pais de origem?</h2>
+    <input type="text" id="txti">
+    <input type="button" value="Verificar" 
+    onclick="verif()"  id="botao" ">
+    <div id="res"></div>
+
+    <script>
+    function verif(){
+        
+        //Js do input
+        
+        var txti = window.document.getElementById('txti')
+        
+        var res = window.document.getElementById('res')
+        
+        var pais = txti
+
+        res.innerHTML = `<p>Sua origem é ${pais.value} !</p>`
+
+        if (pais.value === 'Brasil'){
+            res.innerHTML += `<p>Você é Brasileiro !</p>`
+        } else{
+            res.innerHTML += `<p>Você é gay !</p>`
+        }
+
+    }
+
+        //JS DA INTERAÇAO do IMPUT
+
+    var botao = window.document.getElementById('botao')
+    botao.addEventListener('click', clicar)
+    botao.addEventListener('mouseout', sair)
+        function clicar(){
+     
+             botao.value = `Ok`
+             botao.style.backgroundColor = 'green';
+
+        }
+        
+        function sair(){
+            botao.value = `Verificar`
+            botao.style.backgroundColor = 'rgb(54, 134, 134)'
+        }
+
+    
+       
+            
+
+        
+    
+    
+    </script>
+    
+</body>
+</html>
