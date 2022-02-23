@@ -42,7 +42,7 @@
 </head>
 <body>
     <h1>Analisando Origem</h1>
-    <h2>Qual seu pais de origem?</h2>
+    <h2>Qual pais você nasceu?</h2>
     <input type="text" id="txti">
     <input type="button" value="Verificar" 
     onclick="verif()"  id="botao" ">
@@ -61,11 +61,16 @@
 
         res.innerHTML = `<p>Sua origem é ${pais.value} !</p>`
 
-        if (pais.value === 'Brasil'){
+        if (pais.value === 'brasil'){
             res.innerHTML += `<p>Você é Brasileiro !</p>`
         } else{
-            res.innerHTML += `<p>Você é gay !</p>`
-        }
+            if(pais.value === 'br'){
+                res.innerHTML += `<p>Você é Brasileiro !</p>`
+            } else{
+                res.innerHTML += `<p>Você é estrangeiro !</p>`
+            }
+        } 
+        
 
     }
 
