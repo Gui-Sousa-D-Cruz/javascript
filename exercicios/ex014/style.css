@@ -26,3 +26,13 @@ footer{
     text-align: center;
     font-style: italic;
 }
+
+div{
+    text-align: center;
+    padding: 10px;
+}
+
+div#msg2{
+    font-weight: bolder;
+    font-size: 2em;
+}
