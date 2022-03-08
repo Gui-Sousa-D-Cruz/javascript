@@ -5,6 +5,7 @@ num.push(9)
 num.push(6)
 num.push(8)
 num.push(4)
+num.push(4)
 num.sort()
 console.log(`Nosso vetor é o ${num} e tem ${num.length} elementos`)
 
