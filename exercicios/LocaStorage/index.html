@@ -8,20 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Olá mundo!</h1>
-    <form name="dados">
-        <label>Nome</label><br>
+    <h1 id="painel">Olá mundo!</h1>
+    <p id="acesso">Você acessou o site</p>
+
+<button onclick="conf(1)" id="bconfig">Configurações</button>
+
+    <form name="fconf" id="fconf">
+        <label>Nome:</label><br>
         <input type="text" name="fnome" id="fnome" size="20"><br><br>
-        <label>Cor de Fundo</label><br><br>
-        <input type="radio" name="fcorF" id="verde" onclick="">Verde<br>
-        <input type="radio" name="fcorF" id="azul" onclick="">Azul<br>
-        <input type="radio" name="fcorF" id="ver" onclick="">Vermelho<br><br>
-        <label>Cor texto</label><br><br>
-        <input type="radio" name="" id="" onclick="">Preto<br>
-        <input type="radio" name="" id="" onclick=""><br>Branco<br>
-        <input type="button" value="gravar" onclick="">
+        <label>Cor de Fundo:</label><br><br>
+        <input type="radio" name="fcorF" id="verde" onclick="defineCor(1,'lightgreen')">Verde<br>
+        <input type="radio" name="fcorF" id="azul" onclick="defineCor(1,'lightblue')">Azul<br>
+        <input type="radio" name="fcorF" id="ver" onclick="defineCor(1,'darkred')">Vermelho<br>
+        <input type="radio" name="fcorF" id="branco" onclick="defineCor(1,'pink')">Rosa <br>
+        <input type="radio" name="fcorF" id="branco" onclick="defineCor(1,'black')">Preto <br><br>
+        <label>Cor texto:</label><br><br>
+        <input type="radio" name="tcorT" id="" onclick="defineCor(2,'black')">Preto<br>
+        <input type="radio" name="tcorT" id="" onclick="defineCor(2,'gray')">Cinza<br>
+        <input type="radio" name="tcorT" id="" onclick="defineCor(2,'white')">Branco<br><br>
+        <input type="button" value="Gravar" onclick="gravar()" id="btn">
+        <input type="button" value="Voltar" onclick="conf(2)">
 
     </form>
+    <p id="teste">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi similique harum sequi, minima deleniti id delectus dolores libero unde magni, quo tempore voluptate aliquam voluptatibus sunt consequuntur. Assumenda, quae distinctio?</p>
 
     <script src="script.js"></script>
 </body>
