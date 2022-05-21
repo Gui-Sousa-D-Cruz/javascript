@@ -4,4 +4,4 @@ if(localStorage.visitas){
     //localStorage.setItem('visitas',1)
     localStorage.visitas= 1
 }
-document.write(`Visitas: ${localStorage.visitas}`)
+console.log(`Visitas: ${localStorage.visitas}`)
