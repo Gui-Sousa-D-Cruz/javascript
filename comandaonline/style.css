@@ -16,6 +16,10 @@ header > h1{
 }
 
 
+main > section { 
+    padding: 20px;
+
+}
 
 section#txtmh2{
     max-width: 100vw;
@@ -30,12 +34,13 @@ section.mesas{
     padding: 10px;
     border-radius: 50px;
     display: inline;
+    margin-left: 10px;
   
     
 }
 
 
-main > section > p {
+main > section > section > p {
     margin: 0;
     display: inline;
 
@@ -45,7 +50,7 @@ p{
     display: inline;
 }
 
-main > section > a {
+main > section > section > a {
     text-decoration: none;
     color: black;
 }
