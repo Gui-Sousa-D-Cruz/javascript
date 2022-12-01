@@ -4,8 +4,10 @@ function d20(a,b){
 }
 
 var btn = document.getElementById('btn1')
-btn.addEventListener('Click', function d20(a,b){
-   var res = Math.floor(Math.random() * (b - a + 1)) + a
-   var btn1 = document.getElementById('btn1'
-   btn1.innerHTML = res
+btn.addEventListener('click', function(){
+   var res = Math.floor(Math.random() * (20 - 1 + 1)) + 1
+   var d20 = document.getElementById('d20')
+   var restxt = document.getElementById('resultado')
+   d20.innerHTML = res
+   restxt.innerHTML = 'Seu resultado foi: '
 }) 
